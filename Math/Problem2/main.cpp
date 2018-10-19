@@ -33,12 +33,20 @@ int gcdEX(int aA, int aB)
 
 int main(int argc, char* argv[])
 {
+
 	int sFirstNumber = 0;
 	int sSecondNumber = 0;
 
 	cin >> sFirstNumber >> sSecondNumber;
 
-	cout << gcdEX(sFirstNumber, sSecondNumber) << endl;
+	//P2
+	int sGCD = gcdEX(sFirstNumber, sSecondNumber);
+	cout << "gcd : ";
+	cout << sGCD << endl;
+
+	//p3
+	cout << "lcm : ";
+	cout << sFirstNumber * sSecondNumber / sGCD << endl;
 
     return 0;
 }
